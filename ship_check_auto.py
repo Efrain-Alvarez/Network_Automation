@@ -32,6 +32,6 @@ def ping (host,ping_count):
             output_file.write('\n\n============================================================\n\n')
             output_file.close()
             
-ships = ["192.168.4.1", "8.8.8.8", "www.google.com", "192.168.4.5"]
+ships = ["www.google.com", "8.8.8.8", "www.youtube.com", "www.facebook.com"]
 
 ping(ships,4)
