@@ -1,0 +1,57 @@
+statistics for 192.168.4.5:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+
+============================================================
+
+Ping statistics for 192.168.4.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+
+============================================================
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 4ms, Maximum = 6ms, Average = 5ms
+
+============================================================
+
+Ping statistics for 172.217.12.132:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 5ms, Maximum = 6ms, Average = 5ms
+
+============================================================
+
+statistics for 192.168.4.5:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+
+============================================================
+
+Ping statistics for 192.168.4.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+
+============================================================
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 4ms, Maximum = 5ms, Average = 4ms
+
+============================================================
+
+Ping statistics for 172.217.12.132:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 5ms, Maximum = 7ms, Average = 6ms
+
+============================================================
+
+statistics for 192.168.4.5:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+
+============================================================
+
