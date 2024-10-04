@@ -6,6 +6,7 @@
 
 from re import findall
 from subprocess import Popen, PIPE
+import os
 
 def ping (host,ping_count):
 
@@ -31,7 +32,18 @@ def ping (host,ping_count):
             output_file.write(data[start_point:].strip())
             output_file.write('\n\n============================================================\n\n')
             output_file.close()
-            
-ships = ["192.168.4.1", "8.8.8.8", "www.google.com", "192.168.4.5"]
 
-ping(ships,4)
+
+dir_path = r'D:\efrai\Documents\ReservationApp'
+
+try:
+    file_count = len([entry for entry in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, entry))])
+    print(f'File count: {file_count}')
+except FileNotFoundError:
+    print(f"The directory '{dir_path}' does not exist.")
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
+            
+#ships = ["192.168.4.1", "8.8.8.8", "www.google.com", "192.168.4.5"]
+
+#ping(ships,4)
