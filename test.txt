@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 statistics for 192.168.4.5:
     Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
 
@@ -76,3 +77,5 @@ Approximate round trip times in milli-seconds:
 
 ============================================================
 
+=======
+>>>>>>> 16016022d006dbfaada808441d593a31bcb73b97

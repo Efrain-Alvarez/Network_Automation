@@ -32,6 +32,11 @@ def ping (host,ping_count):
             output_file.write(data[start_point:].strip())
             output_file.write('\n\n============================================================\n\n')
             output_file.close()
+<<<<<<< HEAD
+=======
+            
+ships = ["www.google.com", "8.8.8.8", "www.youtube.com", "www.facebook.com"]
+>>>>>>> 16016022d006dbfaada808441d593a31bcb73b97
 
 
 dir_path = r'D:\efrai\Documents\ReservationApp'
