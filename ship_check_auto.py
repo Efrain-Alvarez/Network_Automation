@@ -18,7 +18,8 @@ app.layout = [
     dcc.Dropdown(
         options = [{'label':name, 'value':name} for name in df["First Name"].unique()],
         value = df["First Name"].iloc[0]
-    )
+    ),
+    dcc.Graph(id = 'graph-content')
 ]
 
 if __name__ == '__main__':
