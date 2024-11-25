@@ -1,5 +1,6 @@
 import subprocess
 import re
+import csv
 
 # Function to ping a list of IP addresses
 def ping_ips(ip_list):
@@ -25,23 +26,28 @@ def ping_ips(ip_list):
 
 # Function to extract the average round-trip time from ping output
 def extract_average_time(output):
-    # Match the part with avg round-trip times (e.g., "min/avg/max/mdev = 10.4/15.2/20.1/1.2 ms")
     match = re.search(r"min/avg/max/(?:mdev|stddev) = .*?/(.*?)/", output)
     if match:
         return float(match.group(1))  # Return the average time as a float
     return None
 
-# Function to process the results for the list of IPs
-def process_ping_results(results):
-    for ip, status, avg_time in results:
-        if status == "Success":
-            print(f"{ip}: {status}, Average time: {avg_time} ms")
-        else:
-            print(f"{ip}: {status}")
+# Function to export results to a CSV file
+def export_to_csv(results, filename="ping_results.csv"):
+    with open(filename, mode="w", newline="") as file:
+        writer = csv.writer(file)
+        # Write the header row
+        writer.writerow(["IP Address", "Status", "Average Time (ms)"])
+        # Write each result
+        for ip, status, avg_time in results:
+            writer.writerow([ip, status, avg_time])
 
 # List of IP addresses to ping
 ip_addresses = ["8.8.8.8", "1.1.1.1", "192.168.1.1"]
 
-# Ping all IPs and process the results
+# Ping all IPs and get the results
 ping_results = ping_ips(ip_addresses)
-process_ping_results(ping_results)
+
+# Export results to a CSV file
+export_to_csv(ping_results)
+
+print("Ping results have been exported to 'ping_results.csv'.")

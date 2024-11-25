@@ -1,0 +1,4 @@
+IP Address,Status,Average Time (ms)
+8.8.8.8,Success,6.43
+1.1.1.1,Success,9.78
+192.168.1.1,Timeout,
